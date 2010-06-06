@@ -1,6 +1,9 @@
 /**
  * Queueing asyncronous functions. And calls them syncronous.
  *
+ * @version: 0.1(2010-06-06)
+ * @author hagino3000 <http://twitter.com/hagino3000> (Takashi Nishibayashi)
+ *
  * Usage:
  * var queue = new AsyncQueue({ name : 'notification' });
  *
