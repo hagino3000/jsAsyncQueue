@@ -1,0 +1,25 @@
+Async Queue
+
+Queueing asyncronous functions, and call them syncronous.
+
+Usage:
+var clazz = new Clazz();
+
+var queue = new AsyncQueue({name : 'test'});
+
+queue.push({
+  fn : clazz.asyncLoad1,
+  args : [100, 200],
+  scope : clazz,
+  callback : clazz.handleLoad1
+}
+
+queue.push({
+  fn : clazz.asyncLoad2,
+  args : [300],
+  scope : clazz,
+  callback : clazz.handleLoad2
+});
+
+
+See more info, test/test.js
