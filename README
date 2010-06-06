@@ -21,5 +21,10 @@ queue.push({
   callback : clazz.handleLoad2
 });
 
+queue.push({
+  fn : function(){console.info('END')},
+  delay : 1000
+});
+
 
 See more info, test/test.js
